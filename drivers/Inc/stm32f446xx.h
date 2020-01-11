@@ -166,6 +166,26 @@ typedef struct{
 
 }GPIO_RegDef_t;
 
+/*********************** SPI Register Definition Structures ***********************/
+
+typedef struct{
+
+	volatile uint32_t CR1;			/*	 Offset: 0x00	Description: 	*/
+	volatile uint32_t CR2;			/*	 Offset: 0x04	Description: 	*/
+	volatile uint32_t SR;			/*	 Offset: 0x08	Description: 	*/
+	volatile uint32_t DR;			/*	 Offset: 0x0C	Description: 	*/
+	volatile uint32_t CRCPR;		/*	 Offset: 0x10	Description: 	*/
+	volatile uint32_t RXCPR;		/*	 Offset: 0x14	Description: 	*/
+	volatile uint32_t TXCPR;		/*	 Offset: 0x18	Description: 	*/
+	volatile uint32_t I2SCFGR;		/*	 Offset: 0x1C	Description: 	*/
+	volatile uint32_t I2SPR;		/*	 Offset: 0x20	Description: 	*/
+
+}SPI_RegDef_t;
+
+#define SPI1 ((SPI_RegDef_t*) SPI1_BASEADDR
+#define SPI2 ((SPI_RegDef_t*) SPI2_BASEADDR
+#define SPI3 ((SPI_RegDef_t*) SPI3_BASEADDR
+#define SPI4 ((SPI_RegDef_t*) SPI4_BASEADDR
 
 /*********************** EXTI Register Definition Structures ***********************/
 
