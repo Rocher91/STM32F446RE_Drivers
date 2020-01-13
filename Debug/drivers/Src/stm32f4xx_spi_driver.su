@@ -1,8 +1,8 @@
-stm32f4xx_spi_driver.c:11:6:SPI_PeriClockControl	16	static
-stm32f4xx_spi_driver.c:16:6:SPI_Init	16	static
-stm32f4xx_spi_driver.c:20:6:SPI_DeInit	16	static
-stm32f4xx_spi_driver.c:26:6:SPI_SendData	24	static
-stm32f4xx_spi_driver.c:30:6:SPI_ReceiveData	24	static
-stm32f4xx_spi_driver.c:36:6:SPI_IRQInterruptConfig	16	static
-stm32f4xx_spi_driver.c:40:6:SPI_IRQPriorityConfig	16	static
-stm32f4xx_spi_driver.c:44:6:SPI_IRQHandling	16	static
+stm32f4xx_spi_driver.c:12:6:SPI_PeriClockControl	16	static
+stm32f4xx_spi_driver.c:28:6:SPI_Init	24	static
+stm32f4xx_spi_driver.c:77:6:SPI_DeInit	16	static
+stm32f4xx_spi_driver.c:83:6:SPI_SendData	24	static
+stm32f4xx_spi_driver.c:87:6:SPI_ReceiveData	24	static
+stm32f4xx_spi_driver.c:93:6:SPI_IRQInterruptConfig	16	static
+stm32f4xx_spi_driver.c:97:6:SPI_IRQPriorityConfig	16	static
+stm32f4xx_spi_driver.c:101:6:SPI_IRQHandling	16	static

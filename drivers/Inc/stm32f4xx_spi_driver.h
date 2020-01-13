@@ -30,6 +30,64 @@ typedef struct{
 }SPI_Handle_t;
 
 
+
+/*
+ * @SPI_DeviceMode
+ */
+#define SPI_DEVICE_MODE_MASTER 	1
+#define SPI_DEVICE_MODE_SLAVE 	0
+
+
+/*
+ * @SPI_BusConfig
+ */
+#define SPI_BUS_CONFIG_FULL_DUPLEX 			1
+#define SPI_BUS_CONFIG_FULL_HALF_DUPLEX 	2
+#define SPI_BUS_CONFIG_SIMPLEX_RXONLY		4
+
+
+/*
+ * @SPI_SCLKSpeed
+ */
+#define SPI_SCLK_SPEED_DIV_2 				0
+#define SPI_SCLK_SPEED_DIV_4 				1
+#define SPI_SCLK_SPEED_DIV_8 				2
+#define SPI_SCLK_SPEED_DIV_16 				3
+#define SPI_SCLK_SPEED_DIV_32 				4
+#define SPI_SCLK_SPEED_DIV_64 				5
+#define SPI_SCLK_SPEED_DIV_128 				6
+#define SPI_SCLK_SPEED_DIV_256 				7
+
+
+/*
+ * @SPI_DFF
+ */
+#define SPI_DFF_8BITS 						0
+#define SPI_DFF_16BITS 						1
+
+
+/*
+ * @SPI_CPOL
+ */
+#define SPI_CPOL_HIGH 						0
+#define SPI_CPOL_LOW 						1
+
+
+/*
+ * @SPI_CPHA
+ */
+#define SPI_CPHA_HIGH 						0
+#define SPI_CPHA_LOW 						1
+
+
+/*
+ * @SPI_SSM
+ */
+#define SPI_SSM_ENABLE 							1
+#define SPI_SSM_DISABLE 						0
+
+
+
 /* Peripheral Clock Setup*/
 void SPI_PeriClockControl(SPI_RegDef_t* pSPIx,uint8_t Enable);
 

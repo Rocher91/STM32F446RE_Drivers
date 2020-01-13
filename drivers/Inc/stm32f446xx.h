@@ -182,10 +182,70 @@ typedef struct{
 
 }SPI_RegDef_t;
 
-#define SPI1 ((SPI_RegDef_t*) SPI1_BASEADDR
-#define SPI2 ((SPI_RegDef_t*) SPI2_BASEADDR
-#define SPI3 ((SPI_RegDef_t*) SPI3_BASEADDR
-#define SPI4 ((SPI_RegDef_t*) SPI4_BASEADDR
+#define SPI1 ((SPI_RegDef_t*) SPI1_BASEADDR)
+#define SPI2 ((SPI_RegDef_t*) SPI2_BASEADDR)
+#define SPI3 ((SPI_RegDef_t*) SPI3_BASEADDR)
+#define SPI4 ((SPI_RegDef_t*) SPI4_BASEADDR)
+
+/*********************** Bit position definitions of SPI Peripheral ***********************/
+
+// Bit position definitions SPI_CR1
+#define SPI_CR1_CPHA			0
+#define SPI_CR1_CPOL			1
+#define SPI_CR1_MSTR			2
+#define SPI_CR1_BR				3
+#define SPI_CR1_SPE				6
+#define SPI_CR1_LSB_FIRST		7
+#define SPI_CR1_SSI				8
+#define SPI_CR1_SSM				9
+#define SPI_CR1_RX_ONLY			10
+#define SPI_CR1_DFF				11
+#define SPI_CR1_CRC_NEXT		12
+#define SPI_CR1_CRC_EN			13
+#define SPI_CR1_BIDI_OE			14
+#define SPI_CR1_BIDI_MODE		15
+
+// Bit position definitions SPI_CR2
+#define SPI_CR2_RXDMAEN			0
+#define SPI_CR2_TXDMAEN			1
+#define SPI_CR2_SSOE			2
+#define SPI_CR2_FRF				4
+#define SPI_CR2_ERRIE			5
+#define SPI_CR2_RXNEIE			6
+#define SPI_CR2_TXEIE			7
+
+
+// Bit position definitions SPI_SR
+#define SPI_SR_RXNE				0
+#define SPI_SR_TXE				1
+#define SPI_SR_CHSIDE			2
+#define SPI_SR_UDR				3
+#define SPI_SR_CRCERR			4
+#define SPI_SR_MODF				5
+#define SPI_SR_OVR				6
+#define SPI_SR_BSY				7
+#define SPI_SR_FRE				8
+
+
+// Bit position definitions SPI_I2SCFGR
+#define SPI_I2SCFGR_CHLEN		0
+#define SPI_I2SCFGR_DATLEN		1
+#define SPI_I2SCFGR_CKPOL		3
+#define SPI_I2SCFGR_I2SSTD		4
+#define SPI_I2SCFGR_RES			6
+#define SPI_I2SCFGR_PCMSYNC		7
+#define SPI_I2SCFGR_I2SCFG		8
+#define SPI_I2SCFGR_I2SE		10
+#define SPI_I2SCFGR_I2SMOD		11
+#define SPI_I2SCFGR_ASTREN		12
+
+// Bit position definitions SPI_I2SSPR
+#define SPI_I2SSPR_I2SDIV		0
+#define SPI_I2SSPR_ODD			8
+#define SPI_I2SSPR_MCKOE		9
+
+/******************************************************************************************/
+
 
 /*********************** EXTI Register Definition Structures ***********************/
 
